@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="tela" id="resulttela">
+           
+        </div>
+        <div class="historico">
+            <div class="container">
+                <strong>HISTÓRICO</strong>
+            </div>
+            <div class="seta" onclick="back()" style="cursor: pointer;" id="resultado">
+                APAGAR
+            </div>
+        </div>
+        <div class="numeros">
+            <table>
+                <tr class="corlinha">
+                    <td class="botao" onclick="clean()">C</td>
+                    <td class="botao">()</td>
+                    <td class="botao"  onclick="insert('%', true)">%</td>
+                    <td class="corlinha botao"  onclick="insert('÷', true)">÷</td>
+                </tr>
+                <tr>
+                    <td class="botao" onclick="insert('7')">7</td>
+                    <td class="botao"  onclick="insert('8')">8</td>
+                    <td class="botao"  onclick="insert('9')">9</td>
+                    <td class="corlinha botao"  onclick="insert('*', true)">X</td> 
+                </tr>
+                <tr>
+                    <td class="botao"  onclick="insert('4')">4</td>
+                    <td class="botao"  onclick="insert('5')">5</td>
+                    <td class="botao"  onclick="insert('6')">6</td>
+                    <td class="corlinha botao"  onclick="insert('-', true)">-</td>
+                </tr>
+                <tr>
+                    <td class="botao"  onclick="insert('1')">1</td>
+                    <td class="botao"  onclick="insert('2')">2</td>
+                    <td class="botao"  onclick="insert('3')">3</td>
+                    <td class="corlinha botao"  onclick="insert('+', true)">+</td>
+                </tr>
+                <tr>
+                    <td class="botao" onclick="insert('.')">.</td>
+                    <td class="botao"  onclick="insert('0')">0</td>
+                    <td class="botao">±</td>
+                    <td class="corlinhaigual botao"  onclick="calc()    ">=</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+<script src="script.js"></script>    
+</body>
+</html>
